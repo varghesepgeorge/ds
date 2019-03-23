@@ -4,23 +4,23 @@ package com.varghese.tutorials.ds;
 
 public class TailRecursion {
 
-    public static int accumulator;
+    public static long accumulator;
 
     public TailRecursion() {
         accumulator = 1;
     }
 
-    public void factorial(int n) {
+    public void factorial(long n) {
         if(n==0)
             return;
         try {
-            calc(n)
+            calc(n);
         } catch (Exception e) {
             factorial(n-1);
         }
     }
 
-    private void calc(n) throws Exception {
+    private void calc(long n) throws Exception {
         accumulator = accumulator * n;
         throw new Exception();
     }

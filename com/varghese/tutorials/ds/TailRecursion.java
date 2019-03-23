@@ -1,5 +1,7 @@
 package com.varghese.tutorials.ds;
 
+/* Attempt to not have deep recursive stacks */
+
 public class TailRecursion {
 
     public static int accumulator;
